@@ -20,6 +20,7 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { ClientService } from './services/client.service';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { ClientService } from './services/client.service';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase, 'clientpanel'),
     AngularFirestoreModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    FormsModule
   ],
   providers: [ClientService],
   bootstrap: [AppComponent]
