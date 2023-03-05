@@ -24,6 +24,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ClientService } from './services/client.service';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './services/auth.service';
+import { SettingsService } from './services/settings.service';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { AuthService } from './services/auth.service';
   ],
   providers: [
     ClientService,
-    AuthService
+    AuthService,
+    SettingsService
   ],
   bootstrap: [AppComponent]
 })
